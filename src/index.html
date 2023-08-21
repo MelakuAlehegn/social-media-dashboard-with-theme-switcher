@@ -13,39 +13,77 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <main>
-    <div>
-      <div>
-        <h1>Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
+<body class="font-sans">
+  <div class="bg-lightTheme-veryPaleBlue h-64 rounded-b-3xl w-full"></div>
+  <main class="container mx-auto px-8 -mt-60">
+    <div class="flex flex-col items-center">
+      <div class="flex flex-col md:flex-row md:justify-between w-full">
+        <div class="pb-5">
+          <h1 class="text-lightTheme-veryDarkBlue text-[26px] font-bold">Social Media Dashboard</h1>
+          <p class="text-lightTheme-darkGreyishBlue text-lg font-bold">Total Followers: 23,004</p>
+        </div>
+        <hr class="border-darkTheme-darkDesaturatedBlue h-1 md:hidden">
+        <div class="flex justify-between mt-3 mb-6 md:items-center md:justify-center">
+          <h3 class="text-lightTheme-darkGreyishBlue text-lg font-bold">Dark Mode</h3>
+          <div class="rounded-full bg-lightTheme-toggle px-7 relative">
+            <button class="rounded-full p-2.5 bg-white absolute right-1 top-1"></button>
+          </div>
+        </div>
       </div>
-      <h3>Dark Mode</h3>
-    </div>
-    <div>
-      <div>
-        <p><img src="../images/icon-facebook.svg" alt="facebook icon"> @nathanf</p>
-        <h1> 1987 </h1>
-        <h3> Followers </h3>
-        <p><img src="../images/icon-up.svg" alt="up icon">12 Today</p>
-      </div>
-      <div>
-        <p><img src="../images/icon-twitter.svg" alt="twitter icon"> @nathanf</p>
-        <h1> 1044 </h1>
-        <h3> Followers </h3>
-        <p><img src="../images/icon-up.svg" alt="up icon">99 Today</p>
-      </div>
-      <div>
-        <p><img src="../images/icon-instagram.svg" alt="instagram icon"> @realnathanf </p>
-        <h1> 11k </h1>
-        <h3> Followers </h3>
-        <p><img src="../images/icon-up.svg" alt="up icon">1099 Today</p>
-      </div>
-      <div>
-        <p><img src="../images/icon-youtube.svg" alt="youtube icon"> Nathan F. </p>
-        <h1> 8239 </h1>
-        <h3> Subscribers </h3>
-        <p><img src="../images/icon-down.svg" alt="down icon">144 Today</p>
+      <!-- Upper Cards -->
+      <div class="flex flex-col gap-6 w-full md:flex-row">
+        <div
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md border-primary-facebook">
+          <div class="flex items-center mb-5">
+            <img class="h-6" src="../images/icon-facebook.svg" alt="facebook icon">
+            <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@nathanf</p>
+          </div>
+          <h1 class="text-6xl font-bold"> 1987 </h1>
+          <h3 class="tracking-[.25em] uppercase text-lightTheme-darkGreyishBlue mt-2"> Followers </h3>
+          <div class="flex items-center mt-4">
+            <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
+            <p class="font-bold text-primary-limeGreen ml-1">12 Today</p>
+          </div>
+        </div>
+        <div
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md border-primary-twitter">
+          <div class="flex items-center mb-5">
+            <img class="h-6" src="../images/icon-twitter.svg" alt="twitter icon">
+            <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@nathanf</p>
+          </div>
+          <h1 class="text-6xl font-bold"> 1044 </h1>
+          <h3 class="tracking-[.25em] uppercase text-lightTheme-darkGreyishBlue mt-2"> Followers </h3>
+          <div class="flex items-center mt-4">
+            <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
+            <p class="font-bold text-primary-limeGreen ml-1">99 Today</p>
+          </div>
+        </div>
+        <div
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md border-primary-facebook">
+          <div class="flex items-center mb-5">
+            <img class="h-6" src="../images/icon-instagram.svg" alt="instagram icon">
+            <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@realnathanf</p>
+          </div>
+          <h1 class="text-6xl font-bold"> 11k </h1>
+          <h3 class="tracking-[.25em] uppercase text-lightTheme-darkGreyishBlue mt-2"> Followers </h3>
+          <div class="flex items-center mt-4">
+            <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
+            <p class="font-bold text-primary-limeGreen ml-1">1099 Today</p>
+          </div>
+        </div>
+        <div
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md border-primary-facebook">
+          <div class="flex items-center mb-5">
+            <img class="h-6" src="../images/icon-youtube.svg" alt="youtube icon">
+            <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">Nathan F.</p>
+          </div>
+          <h1 class="text-6xl font-bold"> 8239 </h1>
+          <h3 class="tracking-[.25em] uppercase text-lightTheme-darkGreyishBlue mt-2"> Subscribers </h3>
+          <div class="flex items-center mt-4">
+            <img class="h-[6px]" src="../images/icon-down.svg" alt="down icon">
+            <p class="font-bold text-primary-brightRed ml-1">144 Today</p>
+          </div>
+        </div>
       </div>
     </div>
     <div>
