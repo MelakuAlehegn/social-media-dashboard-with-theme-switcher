@@ -13,32 +13,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-sans flex flex-col justify-center">
-  <div class="bg-lightTheme-veryPaleBlue h-64 rounded-b-3xl w-full"></div>
-  <main class="container mx-auto px-8 -mt-52 md:px-12">
+<body class="font-sans dark:bg-darkTheme-veryDarkBlue">
+  <div class="bg-lightTheme-veryPaleBlue dark:bg-darkTheme-veryDarkBlueTopBg h-64 rounded-b-3xl w-full"></div>
+  <main class="container mx-auto px-8 -mt-52 md:px-20">
     <div class="container mx-auto flex flex-col items-center">
       <div class="flex flex-col md:flex-row md:justify-between w-full">
-        <div class="pb-5">
-          <h1 class="text-lightTheme-veryDarkBlue text-[26px] font-bold">Social Media Dashboard</h1>
-          <p class="text-lightTheme-darkGreyishBlue text-lg md:text-base font-bold">Total Followers: 23,004</p>
+        <div class="pb-9">
+          <h1 class="text-lightTheme-veryDarkBlue dark:text-darkTheme-white text-[26px] font-bold">Social Media
+            Dashboard </h1>
+          <p class="text-lightTheme-darkGreyishBlue text-base md:text-base font-bold">Total Followers: 23,004</p>
         </div>
         <hr class="md:hidden bg-desaturatedBlue h-1" />
         <div class="flex justify-between mt-3 mb-6 md:justify-center">
           <h3 class="text-lightTheme-darkGreyishBlue text-lg font-bold md:mr-2 md:text-base">Dark Mode</h3>
-          <div class="flex items-center bg-lightTheme-toggle rounded-full h-6 pl-1 pr-7">
-            <button class="bg-white rounded-full p-2"></button>
+          <div id="dark-mode-toggle-button"
+            class="flex items-center transition-colors duration-500 bg-lightTheme-toggle cursor-pointer rounded-full h-6 pl-1 pr-7 dark:bg-gradient-to-r dark:from-darkTheme-toggle-from dark:to-darkTheme-toggle-to">
+            <button id="btn"
+              class="bg-white cursor-pointer rounded-full p-2 dark:bg-darkTheme-darkDesaturatedBlue dark:translate-x-6"></button>
           </div>
         </div>
       </div>
       <!-- Upper Cards -->
       <div class="flex flex-col gap-6 w-full md:flex-row md:justify-between">
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full md:w-1/5 py-5 border-t-4 rounded-md border-primary-facebook">
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full md:w-1/5 py-5 border-t-4 rounded-md border-primary-facebook dark:bg-darkTheme-darkDesaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="../images/icon-facebook.svg" alt="facebook icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@nathanf</p>
           </div>
-          <h1 class="text-5xl font-bold"> 1987 </h1>
+          <h1 class="text-5xl font-bold dark:text-darkTheme-white"> 1987 </h1>
           <h3 class="tracking-[.25em] text-sm uppercase text-lightTheme-darkGreyishBlue mt-2"> Followers </h3>
           <div class="flex items-center mt-4">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
@@ -46,12 +49,12 @@
           </div>
         </div>
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-twitter">
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-twitter dark:bg-darkTheme-darkDesaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="../images/icon-twitter.svg" alt="twitter icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@nathanf</p>
           </div>
-          <h1 class="text-5xl font-bold"> 1044 </h1>
+          <h1 class="text-5xl font-bold dark:text-darkTheme-white"> 1044 </h1>
           <h3 class="tracking-[.25em] text-sm uppercase text-lightTheme-darkGreyishBlue mt-2"> Followers </h3>
           <div class="flex items-center mt-4">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
@@ -59,12 +62,12 @@
           </div>
         </div>
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-facebook">
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-facebook dark:bg-darkTheme-darkDesaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="../images/icon-instagram.svg" alt="instagram icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@realnathanf</p>
           </div>
-          <h1 class="text-5xl font-bold"> 11k </h1>
+          <h1 class="text-5xl font-bold dark:text-darkTheme-white"> 11k </h1>
           <h3 class="tracking-[.25em] text-sm uppercase text-lightTheme-darkGreyishBlue mt-2"> Followers </h3>
           <div class="flex items-center mt-4">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
@@ -72,12 +75,12 @@
           </div>
         </div>
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-youtube">
+          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-youtube dark:bg-darkTheme-darkDesaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="../images/icon-youtube.svg" alt="youtube icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">Nathan F.</p>
           </div>
-          <h1 class="text-5xl font-bold"> 8239 </h1>
+          <h1 class="text-5xl font-bold dark:text-darkTheme-white"> 8239 </h1>
           <h3 class="tracking-[.25em] text-sm uppercase text-lightTheme-darkGreyishBlue mt-2"> Subscribers </h3>
           <div class="flex items-center mt-4">
             <img class="h-[6px]" src="../images/icon-down.svg" alt="down icon">
@@ -87,106 +90,115 @@
       </div>
       <!-- Upper Cards End -->
     </div>
-    <h2 class="text-[25px] font-bold mt-10 mb-6 text-lightTheme-darkGreyishBlue">Overview - Today</h2>
+    <h2 class="text-[25px] font-bold mt-10 mb-6 text-lightTheme-darkGreyishBlue dark:text-darkTheme-white">Overview -
+      Today</h2>
     <div class="container flex flex-col items-center w-full gap-6 md:flex-row md:justify-between md:flex-wrap mx-auto">
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Page Views</h4>
-          <img class="h-6" src="../images/icon-facebook.svg" alt="facebook icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Page Views</h4>
+          <img class="h-5" src="../images/icon-facebook.svg" alt="facebook icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">87</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">87</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="down icon">
             <p class="font-bold text-primary-limeGreen ml-1 text-sm">3%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Likes</h4>
-          <img class="h-6" src="../images/icon-facebook.svg" alt="facebook icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
+          <img class="h-5" src="../images/icon-facebook.svg" alt="facebook icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">52</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">52</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-down.svg" alt="down icon">
             <p class="font-bold text-primary-brightRed ml-1 text-sm">2%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Likes</h4>
-          <img class="h-6" src="../images/icon-instagram.svg" alt="instagram icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
+          <img class="h-5" src="../images/icon-instagram.svg" alt="instagram icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">5462</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">5462</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
             <p class="font-bold text-primary-limeGreen ml-1 text-sm">2257%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Profile Views</h4>
-          <img class="h-6" src="../images/icon-instagram.svg" alt="instagram icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Profile Views</h4>
+          <img class="h-5" src="../images/icon-instagram.svg" alt="instagram icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">52k</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">52k</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="down icon">
             <p class="font-bold text-primary-limeGreen ml-1 text-sm">1375%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Retweet</h4>
-          <img class="h-6" src="../images/icon-twitter.svg" alt="twitter icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Retweet</h4>
+          <img class="h-5" src="../images/icon-twitter.svg" alt="twitter icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">117</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">117</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
             <p class="font-bold text-primary-limeGreen ml-1 text-sm">303%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Likes</h4>
-          <img class="h-6" src="../images/icon-twitter.svg" alt="twitter icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
+          <img class="h-5" src="../images/icon-twitter.svg" alt="twitter icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">507</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">507</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-up.svg" alt="up icon">
             <p class="font-bold text-primary-limeGreen ml-1 text-sm">553%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Likes</h4>
-          <img class="h-6" src="../images/icon-youtube.svg" alt="youtube icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
+          <img class="h-5" src="../images/icon-youtube.svg" alt="youtube icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">107</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">107</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-down.svg" alt="down icon">
             <p class="font-bold text-primary-brightRed ml-1 text-sm">19%</p>
           </div>
         </div>
       </div>
-      <div class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full">
+      <div
+        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full dark:bg-darkTheme-darkDesaturatedBlue">
         <div class="flex justify-between items-start mb-7">
-          <h4 class="font-bold text-lg text-lightTheme-darkGreyishBlue">Total Views</h4>
-          <img class="h-6" src="../images/icon-youtube.svg" alt="youtube icon">
+          <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Total Views</h4>
+          <img class="h-5" src="../images/icon-youtube.svg" alt="youtube icon">
         </div>
         <div class="flex justify-between">
-          <h2 class="text-4xl font-bold">1407</h2>
+          <h2 class="text-3xl font-bold dark:text-darkTheme-white">1407</h2>
           <div class="flex items-center">
             <img class="h-[6px]" src="../images/icon-down.svg" alt="down icon">
             <p class="font-bold text-primary-brightRed ml-1 text-sm">12%</p>
@@ -198,6 +210,7 @@
   <div class=""> Challenge by <a class="text-sm" href="https://www.frontendmentor.io?ref=challenge"
       target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/MelakuAlehegn"
       target="_blank">Melaku Alehegn</a>. </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
