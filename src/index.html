@@ -17,7 +17,7 @@
   <div class="bg-lightTheme-veryPaleBlue dark:bg-darkTheme-veryDarkBlueTopBg h-64 rounded-b-3xl w-full"></div>
   <main class="container mx-auto px-8 -mt-52 md:px-20">
     <div class="container mx-auto flex flex-col items-center">
-      <div class="flex flex-col md:flex-row md:justify-between w-full">
+      <div class="container mx-auto flex flex-col md:flex-row md:justify-between w-full">
         <div class="pb-9">
           <h1 class="text-lightTheme-veryDarkBlue dark:text-darkTheme-white text-[26px] font-bold">Social Media
             Dashboard </h1>
@@ -25,7 +25,7 @@
         </div>
         <hr class="md:hidden bg-desaturatedBlue h-1" />
         <div class="flex justify-between mt-3 mb-6 md:justify-center">
-          <h3 class="text-lightTheme-darkGreyishBlue text-lg font-bold md:mr-2 md:text-base">Dark Mode</h3>
+          <h2 class="text-lightTheme-darkGreyishBlue text-lg font-bold md:mr-2 md:text-base">Dark Mode</h2>
           <div id="dark-mode-toggle-button"
             class="flex items-center transition-colors duration-500 bg-lightTheme-toggle cursor-pointer rounded-full h-6 pl-1 pr-7 dark:bg-gradient-to-r dark:from-darkTheme-toggle-from dark:to-darkTheme-toggle-to hover:bg-gradient-to-r hover:from-darkTheme-toggle-from hover:to-darkTheme-toggle-to">
             <button id="btn"
@@ -34,9 +34,9 @@
         </div>
       </div>
       <!-- Upper Cards -->
-      <div class="flex flex-col gap-6 w-full md:flex-row md:justify-between">
+      <div class="flex flex-col gap-8 w-full md:flex-row  md:justify-between md:flex-wrap lg:flex-nowrap">
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full md:w-1/5 py-5 border-t-4 rounded-md border-primary-facebook hover:bg-lightTheme-lightGreyishBlue hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+          class="bg-lightTheme-veryPaleBlue flex md:mr-6 flex-col items-center w-full md:w-1/3 py-5 border-t-4 rounded-md border-primary-facebook hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="./images/icon-facebook.svg" alt="facebook icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@nathanf</p>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-twitter hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+          class="bg-lightTheme-veryPaleBlue flex md:mr-6 flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/3 border-primary-twitter hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="./images/icon-twitter.svg" alt="twitter icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@nathanf</p>
@@ -62,8 +62,10 @@
           </div>
         </div>
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-facebook hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
-          <div class="flex items-center mb-5">
+          class="bg-lightTheme-veryPaleBlue flex md:mr-6 flex-col items-center w-full pb-7 rounded-md md:w-1/3 hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+          <div class="h-1 w-full bg-gradient-to-r from-primary-instagram-from to-primary-instagram-to">
+          </div>
+          <div class="flex items-center mb-5 pt-7">
             <img class="h-5" src="./images/icon-instagram.svg" alt="instagram icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">@realnathanf</p>
           </div>
@@ -75,7 +77,7 @@
           </div>
         </div>
         <div
-          class="bg-lightTheme-veryPaleBlue flex flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/5 border-primary-youtube hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+          class="bg-lightTheme-veryPaleBlue flex md:mr-6 flex-col items-center w-full py-7 border-t-4 rounded-md md:w-1/3 border-primary-youtube hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
           <div class="flex items-center mb-5">
             <img class="h-5" src="./images/icon-youtube.svg" alt="youtube icon">
             <p class="font-bold text-lightTheme-darkGreyishBlue ml-2">Nathan F.</p>
@@ -92,9 +94,10 @@
     </div>
     <h2 class="text-[25px] font-bold mt-10 mb-6 text-lightTheme-darkGreyishBlue dark:text-darkTheme-white">Overview -
       Today</h2>
-    <div class="container flex flex-col items-center w-full gap-6 md:flex-row md:justify-between md:flex-wrap mx-auto">
+    <!-- Lower Cards -->
+    <div class="flex gap-8 flex-col w-full md:flex-row  md:justify-between md:flex-wrap lg:flex-nowrap">
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Page Views</h4>
           <img class="h-5" src="./images/icon-facebook.svg" alt="facebook icon">
@@ -108,7 +111,7 @@
         </div>
       </div>
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
           <img class="h-5" src="./images/icon-facebook.svg" alt="facebook icon">
@@ -122,7 +125,7 @@
         </div>
       </div>
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
           <img class="h-5" src="./images/icon-instagram.svg" alt="instagram icon">
@@ -136,7 +139,7 @@
         </div>
       </div>
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Profile Views</h4>
           <img class="h-5" src="./images/icon-instagram.svg" alt="instagram icon">
@@ -149,8 +152,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="flex gap-8 flex-col w-full md:flex-row mt-7 md:justify-between md:flex-wrap lg:flex-nowrap">
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Retweet</h4>
           <img class="h-5" src="./images/icon-twitter.svg" alt="twitter icon">
@@ -164,7 +169,7 @@
         </div>
       </div>
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
           <img class="h-5" src="./images/icon-twitter.svg" alt="twitter icon">
@@ -178,7 +183,7 @@
         </div>
       </div>
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Likes</h4>
           <img class="h-5" src="./images/icon-youtube.svg" alt="youtube icon">
@@ -192,7 +197,7 @@
         </div>
       </div>
       <div
-        class="bg-lightTheme-veryPaleBlue md:w-1/5 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
+        class="bg-lightTheme-veryPaleBlue md:mr-6 md:w-1/3 rounded-md flex flex-col justify-between px-7 py-5 w-full hover:bg-lightTheme-lightGreyishBlue dark:bg-darkTheme-darkDesaturatedBlue dark:hover:bg-darkTheme-desaturatedBlue">
         <div class="flex justify-between items-start mb-7">
           <h4 class="text-sm font-bold text-lightTheme-darkGreyishBlue">Total Views</h4>
           <img class="h-5" src="./images/icon-youtube.svg" alt="youtube icon">
@@ -206,10 +211,13 @@
         </div>
       </div>
     </div>
+    </div>
   </main>
-  <div class=""> Challenge by <a class="text-sm" href="https://www.frontendmentor.io?ref=challenge"
-      target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/MelakuAlehegn"
-      target="_blank">Melaku Alehegn</a>. </div>
+  <footer class="flex items-center justify-center my-5 dark:text-white">
+    <div> Challenge by <a class="text-primary-limeGreen" href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>. Coded by <a class="text-primary-limeGreen"
+        href="https://www.frontendmentor.io/profile/MelakuAlehegn" target="_blank">Melaku Alehegn</a>. </div>
+  </footer>
   <script src="./js/main.js"></script>
 </body>
 

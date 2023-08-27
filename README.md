@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/MelakuAlehegn/social-media-dashboard-with-theme-switcher)
-- Live Site URL: [Live URL](https://64e4377176d0001b73abaa5d--eloquent-pudding-0c85fd.netlify.app/)
+- Live Site URL: [Live URL](https://eloquent-pudding-0c85fd.netlify.app/)
 
 ## My process
 
